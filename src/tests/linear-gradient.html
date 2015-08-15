@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- BASED on http://jsfiddle.net/Y2zue/-->
+<!--http://www.stator-afm.com/tutorial/d3-js-mouse-events/-->
+<html>
+
+<head>
+    <title>Linear Gradient</title>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="../js/linear-gauge.js"></script>
+    <link rel="stylesheet" href="../css/linear-gauge.css"></link>
+    <style type="text/css">
+        body {
+            font-family: "Helvetica";
+            font-size: 15px;
+        }
+        
+        label {
+            display: block;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Linear Gauge - JQuery Widget</h1>
+    <H3>Default</H3>
+    <div id="new-gradient"></div>
+    <h3>Asynchronous Update</h3>
+    <div id="gradient"></div>
+    <h3>Wide</h3>
+    <div id="gradient2"></div>
+    <h3>Change Height</h3>
+    <div id="gradient3"></div>
+    <script>
+        $(document).ready(function() {
+            //Components
+            $("#new-gradient").linearGauge();
+            $("#gradient").linearGauge({
+                points: [0, 10, 50, 100],
+                colors: ["red", "orange", "green", "blue"]
+            });
+            $("#gradient2").linearGauge({
+                width: 1000,
+                points: [0, 10, 20, 50, 100],
+                colors: ["red", "orange", "#fcfcfc", "green", "blue"],
+                minorTicks: true
+            });
+            $("#gradient3").linearGauge({
+                width: 1000,
+                height: 80,
+                minorTicks: true
+            });
+            //Labels for updates
+            $.each($(".linear-gauge"), function(i, gauge) {
+                var colors = $("<label id=\"" + $(gauge).attr("id") + "-colors\"></label>");
+                var points = $("<label id=\"" + $(gauge).attr("id") + "-points\"></label>");
+                colors.appendTo($(gauge));
+                points.appendTo($(gauge));
+                colors.text($(gauge).linearGauge("colors"));
+                points.text($(gauge).linearGauge("points"));
+            });
+            //Update labels by change
+            $(".linear-gauge").on("lineargaugechange", function(event, data) {
+                //alert("Points: " + data.points + "   Colors: " + data.colors);
+                $("#" + $(this).attr("id") + "-colors").text(data.colors).effect("highlight", 2000);
+                $("#" + $(this).attr("id") + "-points").text(data.points).effect("highlight", 2000);
+            });
+
+            //Asynchronous updates
+            setTimeout(function() {
+                $("#gradient").linearGauge("points", [-10, 0, 15, 20, 40, 100, 110]);
+                $("#gradient").linearGauge("colors", ["red", "orange", "#fcfcfc", "green", "blue", "#d5ff00", "#9dff00"]);
+            }, 5000);
+            setTimeout(function() {
+                $("#gradient").linearGauge("colors", ["blue", "#d5ff00", "#9dff00", "red", "orange", "#fcfcfc", "green"]);
+            }, 10000);
+
+            setTimeout(function() {
+                $("#gradient").linearGauge("minorTicks", true);
+            }, 15000);
+
+
+
+        });
+
+    </script>
+</body>
+
+</html>
