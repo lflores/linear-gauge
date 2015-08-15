@@ -6,9 +6,14 @@ Based on [Linear Gauge](http://docs.fusioncharts.com/flex/charts/)Flex component
 
 #Features
 This simple component allows you to configure next properties:
+* Draggable thredsholds and changes initial values
+* Configurable colors
+* Configurable threadsholds
 * Width: Default is 200px, but you can chage it.
 * Height: Default is 40px, but you can change it.
 * Change Event: Each time that you drag threadsholds, the change event is dispatched
+* Ticks scale, that divides the gauge 
+* Minor ticks scale optional
 
 #Examples
 ##Default:
