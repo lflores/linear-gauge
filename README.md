@@ -1,6 +1,6 @@
 # Linear Gauge
 This is a component that use d3 library and generate a JQuery UI widget, to control colors and thredsholds.
-Based on ![Linear Gauge Flex](http://docs.fusioncharts.com/flex/charts/) such as Fusion Charts, I had the needs to develop one of this in HTML and CSS.
+Based on [Linear Gauge Flex](http://docs.fusioncharts.com/flex/charts/) such as Fusion Charts, I had the needs to develop one of this in HTML and CSS.
 
 #Features
 This simple components allows you to configure next properties:
