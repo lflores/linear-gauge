@@ -10,5 +10,5 @@ This simple component allows you to configure next properties:
 * Height: Default is 40px, but you can change it.
 * Change Event: Each time that you drag threadsholds, the change event is dispatched
 
-Example:
+##Default:
 ![Linear Gauge Default](https://raw.githubusercontent.com/lflores/linear-gauge/master/images/linear-gauge.png)
