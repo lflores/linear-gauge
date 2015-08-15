@@ -33,7 +33,6 @@ Este widget fue desarrollado para la lista de analisis
             this.svg
                 .attr("width", this.options.width + this.options.margin.left + this.options.margin.right)
                 .attr("height", this.options.height + this.options.margin.top + this.options.margin.bottom);
-            this.refresh();
             this._updateThresholds();
         },
 
@@ -133,46 +132,6 @@ Este widget fue desarrollado para la lista de analisis
             //    .domain([d3.min(this.options.points), d3.max(this.options.points)])
             //    .range([this.options.margin.left, this.options.width - (this.options.margin.left + this.options.margin.right)]);
             //var lineHeight = that.options.height - that.options.margin.top;
-        },
-
-        refresh: function () {
-            //var that = this;
-            //var widthScale = d3.scale.linear()
-            //    .domain([d3.min(this.options.points), d3.max(this.options.points)])
-            //    .range([0, this.options.width - (this.options.margin.left + this.options.margin.right) - 1]);
-
-            //this.axis.call(
-            //    d3.svg.axis()
-            //    .scale(widthScale)
-            //    .orient(this.options.orient)
-            //    .ticks(this.options.ticks)
-            //    .tickSize(that.options.height - that.options.margin.top - that.options.margin.bottom)
-            //)
-
-            //if (this.subAxis === undefined && this.options.minorTicks) {
-            //    this.subAxis = this.svg.append("g");
-            //    this.subAxis
-            //        .attr("transform", "translate(" + this.options.margin.left + "," + this.options.margin.top + ")")
-            //        .attr("class", "axis")
-            //        .classed("minor", true)
-            //        .call(
-            //            d3.svg.axis()
-            //            .scale(widthScale)
-            //            .orient(this.options.orient)
-            //            .ticks(this.options.ticks * 10)
-            //            .tickSize((that.options.height - that.options.margin.top - that.options.margin.bottom) / 2)
-            //        );
-            //}
-
-            //if (this.options.minorTicks) {
-            //    this.subAxis
-            //        .call(d3.svg.axis()
-            //            .scale(widthScale)
-            //            .orient(this.options.orient)
-            //            .ticks(this.options.ticks * 10)
-            //            .tickSize((that.options.height - that.options.margin.top - that.options.margin.bottom) / 2)
-            //        )
-            //}
         },
 
         _dispatchEvent: function () {
