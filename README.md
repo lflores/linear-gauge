@@ -12,10 +12,10 @@ This simple component allows you to configure next properties:
 
 #Examples
 ##Default:
-![Linear Gauge Default](https://raw.githubusercontent.com/lflores/linear-gauge/master/images/linear-gauge.png)
+![Linear Gauge Default](https://raw.githubusercontent.com/lflores/linear-gauge/master/src/images/linear-gauge.png)
 
 ##Wide:
-![Linear Gauge Default](https://raw.githubusercontent.com/lflores/linear-gauge/master/images/linear-gauge-wide.png)
+![Linear Gauge Default](https://raw.githubusercontent.com/lflores/linear-gauge/master/src/images/linear-gauge-wide.png)
 
 ##Hide:
-![Linear Gauge Default](https://raw.githubusercontent.com/lflores/linear-gauge/master/images/linear-gauge-hide.png)
+![Linear Gauge Default](https://raw.githubusercontent.com/lflores/linear-gauge/master/src/images/linear-gauge-hide.png)
