@@ -14,6 +14,7 @@ This simple component allows you to configure next properties:
 * Change Event: Each time that you drag threadsholds, the change event is dispatched
 * Ticks scale, that divides the gauge 
 * Minor ticks scale optional
+* Overlaping control
 
 #Examples
 ##Default:
