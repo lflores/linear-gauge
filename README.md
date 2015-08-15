@@ -15,7 +15,11 @@ This simple component allows you to configure next properties:
 ![Linear Gauge Default](https://raw.githubusercontent.com/lflores/linear-gauge/master/src/images/linear-gauge.png)
 
 ##Wide:
-![Linear Gauge Default](https://raw.githubusercontent.com/lflores/linear-gauge/master/src/images/linear-gauge-wide.png)
+![Linear Gauge Wide](https://raw.githubusercontent.com/lflores/linear-gauge/master/src/images/linear-gauge-wide.png)
 
-##Hide:
-![Linear Gauge Default](https://raw.githubusercontent.com/lflores/linear-gauge/master/src/images/linear-gauge-hide.png)
+##High:
+![Linear Gauge High](https://raw.githubusercontent.com/lflores/linear-gauge/master/src/images/linear-gauge-high.png)
+
+##Color & Points
+![Linear Gauge Colors&Point](https://raw.githubusercontent.com/lflores/linear-gauge/master/src/images/linear-gauge-colors-points.png)
+
