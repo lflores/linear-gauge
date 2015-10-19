@@ -7,16 +7,17 @@
 
 ## Features
 This is a component that use [d3](http://d3js.org/) library and generate a JQuery UI widget, to control colors and thredsholds in a colored gradient background.
-Based on [Linear Gauge](http://docs.fusioncharts.com/flex/charts/)Flex components, such as Fusion Charts or [this](http://www.ardisialabs.com/flex-components/linearGauges), this component birth like a personal needs, and I decided to share it.
+Based on [Linear Gauge](http://docs.fusioncharts.com/flex/charts/) Flex components, such as Fusion Charts or [this](http://www.ardisialabs.com/flex-components/linearGauges), this component birth like a personal needs, and I decided to share it.
+Once initialized, you can drag thresholds and see changes of color gradients.
+Also, you can register an event change ("lineargaugechange") and send result to another component, such as graphic chart.
+
+Examples
 ###Default:
 ![Linear Gauge Default](http://rawgit.com/lflores/linear-gauge/master/src/images/linear-gauge.png)
-
 ###Wide:
 ![Linear Gauge Wide](http://rawgit.com/lflores/linear-gauge/master/src/images/linear-gauge-wide.png)
-
 ###High:
 ![Linear Gauge High](http://rawgit.com/lflores/linear-gauge/master/src/images/linear-gauge-high.png)
-
 ###Color & Points
 ![Linear Gauge Colors&Point](http://rawgit.com/lflores/linear-gauge/master/src/images/linear-gauge-colors-points.png)
 
@@ -71,6 +72,9 @@ You can pass these options to the initialize function to set a custom look and f
     </tr>
 </table>
 
+
+## Callbacks
+When a threshold drag ends, a <strong>lineargaugechange</strong> is fired to comunicate that values are changed.
 <table>
     <tr>
         <th>Event</th>
@@ -90,10 +94,29 @@ You can pass these options to the initialize function to set a custom look and f
 </table>
 
 
-## Callbacks
-
-
 ## Plugin api
+#### jQuery
+
+```javascript
+$(function() {
+    // instantiate the plugin
+    
+    //Default Example
+    $("#gradient").linearGauge();
+    ...
+    // change width
+    $("#gradient").linearGauge("width",200);
+    ...
+    // change height
+    $("#gradient").linearGauge("width",200);
+    
+    // change points and colors
+    $("#gradient").linearGauge({
+        points: [0, 10, 50, 100],
+        colors: ["red", "orange", "green", "blue"]
+    });
+});
+```
 
 
 ## Browser Support
