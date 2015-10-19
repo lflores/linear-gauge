@@ -4,7 +4,7 @@
  *
  * @license 
  * @author Leonardo Flores <flores.leonardo@gmail.com> (http://www.triadsoft.com.ar)
- * @version 0.0.7
+ * @version 0.7.5
  **/
 
 (function (root, factory) {

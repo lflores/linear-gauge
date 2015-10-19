@@ -6,4 +6,4 @@ Native support
 * Opera
 * Internet Explorer 9+
 
-Support for Internet Explorer 7 and 8 with [excanvas](https://code.google.com/p/explorercanvas/wiki/Instructions) polyfill.
+Support for Internet Explorer 9.
