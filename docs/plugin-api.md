@@ -11,7 +11,7 @@ $(function() {
     $("#gradient").linearGauge("width",200);
     ...
     // change height
-    $("#gradient").linearGauge("width",200);
+    $("#gradient").linearGauge("height",200);
     
     // change points and colors
     $("#gradient").linearGauge({

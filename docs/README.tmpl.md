@@ -22,11 +22,5 @@
 ## Browser Support
 {%= _.doc("browser-support.md") %}
 
-## Test
-{%= _.doc("test.md") %}
-
-## Credits
-{%= _.doc("credits.md") %}
-
 ## Copyright
 {%= copyright %} {%= license %}
