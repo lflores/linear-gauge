@@ -15,7 +15,7 @@ module.exports = function (grunt) {
             dest: 'dist',
             docs: 'docs',
             test: 'test',
-            demo: 'demo'
+            demo: 'examples'
         },
 
         clean: {
@@ -120,10 +120,10 @@ module.exports = function (grunt) {
 
         karma: {
             unit: {
-                configFile: 'karma.conf.coffee'
+                configFile: 'karma.conf.js'
             },
             ci: {
-                configFile: 'karma.conf.coffee',
+                configFile: 'karma.conf.js',
                 singleRun: true,
                 browsers: ['PhantomJS']
             }
@@ -190,7 +190,7 @@ module.exports = function (grunt) {
 		'umd:vanilla',
 		'usebanner',
 		'uglify',
-		//'clean:tmp',
+		'clean:tmp',
 		'readme'
 	]);
 
