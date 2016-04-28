@@ -5,8 +5,8 @@ module.exports = function (grunt) {
         pkg: grunt.file.readJSON('package.json'),
 
         cfg: {
-            filename: 'lineargauge',
-            vanillaExportName: 'lineargauge'
+            filename: 'linear-gauge',
+            vanillaExportName: 'linear-gauge'
         },
 
         dirs: {
@@ -132,7 +132,7 @@ module.exports = function (grunt) {
         less: {
             demo: {
                 files: {
-                    '<%= dirs.demo %>/style.css': ['<%= dirs.demo %>/style.less']
+                    '<%= dirs.src %>/css/linear-gauge.css': ['<%= dirs.demo %>/css/linear-gauge.css']
                 }
             }
         },
