@@ -1,28 +1,3 @@
-/**!
- * linear-gauge
- * Lightweight plugin to render simple linear gauge
- *
- * @license 
- * @author Leonardo Flores <flores.leonardo@gmail.com> (http://www.triadsoft.com.ar)
- * @version 0.7.5
- **/
-
-(function (root, factory) {
-  if (typeof define === 'function' && define.amd) {
-    // AMD. Register as an anonymous module unless amdModuleId is set
-    define([], function () {
-      return (root['lineargauge'] = factory());
-    });
-  } else if (typeof exports === 'object') {
-    // Node. Does not work with strict CommonJS, but
-    // only CommonJS-like environments that support module.exports,
-    // like Node.
-    module.exports = factory();
-  } else {
-    root['lineargauge'] = factory();
-  }
-}(this, function () {
-
 /**
 This widget is an implementation of linear gauge using d3 library
 */
@@ -386,7 +361,3 @@ var lineargauge = $.widget("custom.linearGauge", {
         this.refresh();
     },
 });
-
-return lineargauge;
-
-}));

@@ -3,7 +3,7 @@
  * Lightweight plugin to render simple linear gauge
  *
  * @license 
- * @author Leonardo Flores <flores.leonardo@gmail.com> (http://www.triadsoft.com.ar)
+ * @author triad <flores.leonardo@gmail.com> (http://github.com/lflores)
  * @version 0.7.5
  **/
 
