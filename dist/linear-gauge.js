@@ -26,7 +26,7 @@
 /**
 This widget is an implementation of linear gauge using d3 library
 */
-var lineargauge = $.widget("custom.linearGauge", {
+var LinearGauge = $.widget("custom.linearGauge", {
     options: {
         points: [0, 25, 50, 75, 100],
         colors: ["#ff0000", "#ffa300", "#ffe100", "#fffa00", "#1f6f02"],
