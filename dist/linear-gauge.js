@@ -11,7 +11,7 @@
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module unless amdModuleId is set
     define([], function () {
-      return (root['linear-gauge'] = factory());
+      return (root['LinearGauge'] = factory());
     });
   } else if (typeof exports === 'object') {
     // Node. Does not work with strict CommonJS, but
@@ -19,7 +19,7 @@
     // like Node.
     module.exports = factory();
   } else {
-    root['linear-gauge'] = factory();
+    root['LinearGauge'] = factory();
   }
 }(this, function () {
 
@@ -387,6 +387,6 @@ var lineargauge = $.widget("custom.linearGauge", {
     },
 });
 
-return linear-gauge;
+return LinearGauge;
 
 }));

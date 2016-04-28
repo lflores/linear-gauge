@@ -6,7 +6,7 @@ module.exports = function (grunt) {
 
         cfg: {
             filename: 'linear-gauge',
-            vanillaExportName: 'linear-gauge'
+            vanillaExportName: 'LinearGauge'
         },
 
         dirs: {
